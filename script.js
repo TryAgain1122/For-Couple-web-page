@@ -38,6 +38,7 @@ function updateCounter() {
 updateCounter();
 setInterval(updateCounter, 1000);
 
+//Random generate kada comma yung mga next message 
 const messages = [
     "You make my heart skip a beat! 💓",
     "I'm the luckiest person in the world! 🍀",
@@ -68,7 +69,7 @@ closePopup.addEventListener("click", () => {
 // Background Music
 const bgMusic = document.getElementById("bgMusic");
 
-// Try autoplay when page loads
+//Para sa autoplay ng music pwede mo burahin to kung ayaw mo to tapos dun rin sa html code yung audio tag 
 window.addEventListener("load", () => {
   const playPromise = bgMusic.play();
   if (playPromise !== undefined) {
@@ -78,7 +79,6 @@ window.addEventListener("load", () => {
   }
 });
 
-// Optional: play music when user clicks anywhere
 document.addEventListener("click", () => {
   if (bgMusic.paused) {
     bgMusic.play();
