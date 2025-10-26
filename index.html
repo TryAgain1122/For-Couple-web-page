@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>You & Me Forever</title>
+  </head>
+  <body>
+    <div class="floating-elements" id="bubbles"></div>
+
+    <div class="container">
+      <div class="header">
+        <h1 class="cute-title">You & Me Forever</h1>
+        <p class="subtitle">Our Sweet love Story</p>
+        <div class="hearts-row">
+          <span>💕</span>
+          <span>💖</span>
+          <span>💗</span>
+          <span>💖</span>
+          <span>💕</span>
+        </div>
+      </div>
+
+      <div class="counter-box">
+        <h2 class="counter-title">Time We've Been Together</h2>
+        <div class="counter-grid">
+            <div class="counter-card">
+                <span class="counter-num" id="days">0</span>
+                <span class="counter-label">Days</span>
+            </div>
+            <div class="counter-card">
+                <span class="counter-num" id="hours">0</span>
+                <span class="counter-label">Hours</span>
+            </div>
+            <div class="counter-card">
+                <span class="counter-num" id="minutes">0</span>
+                <span class="counter-label">Minutes</span>
+            </div>
+            <div class="counter-card">
+                <span class="counter-num" id="seconds">0</span>
+                <span class="counter-label">Seconds</span>
+            </div>
+        </div>
+      </div>
+      
+      <div class="love-letter">
+        <h2>My Dearest Love,</h2>
+        <p>
+            Every moment with you feels like a dream come true. Your smile brightens my darkest days, 
+            and your laughter is my favorite melody. Thank you for being my partner, my best friend, 
+            and my greatest adventure. I promise to cherish you today, tomorrow, and always. 
+            You are my everything, and I love you more than words can express! 💕
+            </p>
+      </div>
+      
+      <div class="memory-section">
+        <h2 class="section-title">Our Special Moments</h2>
+        <div class="memory-grid">
+            <div class="memory-card">
+                <div class="memory-icon">🌟</div>
+                <h3>First Date</h3>
+                <p>The magical moment when we realized this was something special</p>
+            </div>
+            <div class="memory-card">
+                <div class="memory-icon">🎂</div>
+                <h3>Celebrations</h3>
+                <p>Every birthday, holiday, and milestone made sweeter with you</p>
+            </div>
+            <div class="memory-card">
+                <div class="memory-icon">✈️</div>
+                <h3>Adventures</h3>
+                <p>All the places we've explored and memories we've created</p>
+            </div>
+            <div class="memory-card">
+                <div class="memory-icon">🏡</div>
+                <h3>Cozy Nights</h3>
+                <p>Simple moments together that mean the world to us</p>
+            </div>
+            <div class="memory-card">
+                <div class="memory-icon">🎵</div>
+                <h3>Our Songs</h3>
+                <p>The melody that will always remind us of our love</p>
+            </div>
+            <div class="memory-card">
+                <div class="memory-icon">💑</div>
+                <h3>Forever</h3>
+                <p>The promise we made to always be there for each other</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="memory-section">
+        <h2 class="section-title">Our Photo Memories</h2>
+        <div class="photo-gallery">
+             <div class="photo-item">
+                <!-- 📷 -->
+                 <img src="./Images/img1.jpg" alt="no-image">
+            </div>
+            <div class="photo-item">
+                <!-- 💝 -->
+                  <img src="./Images/img2.jpg" alt="no-image">
+            </div>
+            <div class="photo-item">
+                <!-- 🌹 -->
+                <img src="./Images/img3.jpg" alt="no-image">
+            </div>
+            <div class="photo-item">
+                <!-- 🎀 -->
+                <img src="./Images/img4.jpg" alt="no-image">
+            </div>
+            <div class="photo-item">
+                <!-- 🦋 -->
+                 <img src="./Images/img5.jpg" alt="no-image">
+            </div>
+            <div class="photo-item">
+                <!-- 🌸 -->
+                 <img src="./Images/img6.JPEG" alt="no-image">
+            </div>
+        </div>
+      </div>
+
+      <button class="sweet-button" onclick="showSweetMessage()">Send Me Love! 💌</button>
+
+      <div class="footer">Forever Yours 💕Always Mine</div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-card">
+            <p id="messageText"></p>
+            <button id="closePopup">Close 💕</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <audio src="./audio//i_need_you.mp3" id="bgMusic" autoplay loop></audio>
+  </body>
+</html>
