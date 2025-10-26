@@ -18,6 +18,8 @@ function createBubbles () {
 createBubbles();
 
 //Counter 
+//yyyy-mm-dd
+//depende na sayo kung anong moth kayo e set mo nalang dito 
 const anniversaryDate = new Date('2025-01-01T00:00:00')
 
 function updateCounter() {
